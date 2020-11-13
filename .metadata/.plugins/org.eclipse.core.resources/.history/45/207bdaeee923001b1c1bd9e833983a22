@@ -1,0 +1,46 @@
+package yunbanke3;
+
+public class BankAcc {
+	private String name;
+	private String id;
+	private String balance;
+	public BankAcc() {
+		// TODO 自动生成的构造函数存根
+	}
+	public BankAcc(String name, String id, String balance) {
+		this.name = name;
+		this.id = id;
+		this.balance = balance;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getBalance() {
+		return balance;
+	}
+	public void setBalance(String balance) {
+		this.balance = balance;
+	}
+	
+	public static void main(String[] args) {
+		//界面
+		System.out.println("-----------------");
+		System.out.println("1.查询余额");
+		System.out.println("2.存款");
+		System.out.println("3.取款");
+		System.out.println("4.退出");
+		System.out.println("-----------------");
+
+	}
+	
+
+}

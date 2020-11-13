@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="删除资源“imooc”" deleteContents="true" description="删除资源“imooc”" element1="/imooc" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1604984388791"/>&#x0A;<refactoring comment="将Java 项目“imooc”重命名为“2imooc1day”&#x0D;&#x0A;－ 原始元素：“imooc”&#x0D;&#x0A;－ 重命名的元素：“imooc”&#x0D;&#x0A;－ 更新对已重构元素的引用" description="重命名 Java 项目“imooc”" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=imooc" name="2imooc1day" references="true" stamp="1604995550252" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+package yunbanke2;
+
+public class Matrix {
+	public int[][] a;
+
+	public Matrix(int row,int col) {
+		this.a = new int[row][col];
+	}
+
+	public Matrix() {
+		// TODO 自动生成的构造函数存根
+	}
+
+	public int getA(int row,int col) {
+		return this.a[row][col];
+	}
+
+	public void setA(int row,int col,int num) {
+		this.a[row][col] = num;
+	}
+	
+	public static void main(String[] args) {
+		Matrix m =new Matrix();
+		m.setA(3,4,4);
+		m.getA(3,4);
+	}
+
+}

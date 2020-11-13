@@ -1,0 +1,62 @@
+package yunbanke2;
+import java.util.*;
+public class Matrix {
+	public int[][] a;
+
+	public Matrix(int row,int col) {
+		this.a = new int[row][col];
+	}
+	public int getA(int row,int col) {
+		return this.a[row][col];
+	}
+
+	public void setA(int row,int col,int num) {
+		this.a[row][col] = num;
+	}
+	
+
+    public void print()
+    {
+    	for(int i = 0;i < a.length;i++)
+    	{
+    		for(int j = 0;j < a[0].length;j++)
+    		{
+    			if(j==0)
+    				System.out.print(a[i][j]);
+    			else
+    				System.out.print(" "+a[i][j]);
+    		}
+    		System.out.println();
+    	}
+    	System.out.println();
+    }
+	
+//	public int MatrixAdds(){
+//
+//	}
+	
+
+	
+	public static void main(String[] args) {
+		Matrix a =new Matrix(3,4);
+		Matrix b=new Matrix(3,4);
+		Matrix c=new Matrix(3,4);
+		Random random = new Random();
+
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 4; j++) {
+				a.setA(i, j, random.nextInt(100));
+				b.setA(i, j, random.nextInt(100));
+			}
+	}
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 4; j++) {
+				a.getA(i, j);
+				b.getA(i, j);
+			}
+	}
+			a.print();
+//		c.MatrixAdds();
+		
+	}
+}

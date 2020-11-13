@@ -1,0 +1,13 @@
+package imooc_4;
+
+public class Teacher extends Person {
+
+	public Teacher(String name, int age) {
+		super(name, age);
+		// TODO 自动生成的构造函数存根
+	}
+	public void teach() {
+		System.out.println("愛護每一位學生");
+	}
+
+}

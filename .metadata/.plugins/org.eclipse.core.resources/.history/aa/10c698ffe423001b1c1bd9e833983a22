@@ -1,0 +1,77 @@
+package yunbanke2;
+import java.util.*;
+public class Matrix {
+	public int[][] a;
+
+	public Matrix(int row,int col) {
+		this.a = new int[row][col];
+	}
+	
+	public Matrix() {
+		// TODO 自动生成的构造函数存根
+	}
+
+	public int getA(int row,int col) {
+		return this.a[row][col];
+	}
+
+	public void setA(int row,int col,int num) {
+		this.a[row][col] = num;
+	}
+    public int width()//返回列数
+    {
+    	return a[0].length;
+    }
+    public int height()
+    {
+    	return a.length;
+    }
+    
+    public void print() {
+    	for(int i = 0;i < a.length;i++)
+    	{
+    		for(int j = 0;j < a[0].length;j++)
+    		{
+    			if(j==0)
+    				System.out.print(a[i][j]);
+    			else
+    				System.out.print(" "+a[i][j]);
+    		}
+    		System.out.println();
+    	}
+    	System.out.println();
+    }
+	
+    public void add(Matrix m)//两矩阵相加
+    {
+    	Matrix t = new Matrix(this.a.length,m.a[0].length);
+		for(int i = 0; i < m.a.length; i++) {
+			for(int j = 0; j < m.a[0].length; j++) {
+				t.setA(i, j, this.getA(i, j) + m.getA(i, j));
+			}
+		}		
+		t.print();
+    }
+    
+	public static void main(String[] args) {
+		Matrix a =new Matrix(3,4);
+		Matrix b=new Matrix(3,4);
+		Matrix c=new Matrix(3,4);
+		Random random = new Random();
+
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 4; j++) {
+				a.setA(i, j, random.nextInt(100));
+				b.setA(i, j, random.nextInt(100));
+			}
+	}
+			a.print();
+			System.out.println("--------------------------");
+			b.print();
+			System.out.println("--------------------------");
+			a.add(b);
+			
+			
+		
+	}
+}

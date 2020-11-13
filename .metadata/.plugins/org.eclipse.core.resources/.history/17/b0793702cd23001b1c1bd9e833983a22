@@ -1,0 +1,58 @@
+package yunbanke1;
+
+public class Trigon {
+	private double a;
+	private double b;
+	private double c;
+	public Trigon(double a, double b, double c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	public Trigon() {
+		// TODO 自动生成的构造函数存根
+	}
+	public double getA() {
+		return a;
+	}
+	public void setA(double a) {
+		this.a = a;
+	}
+	public double getB() {
+		return b;
+	}
+	public void setB(double b) {
+		this.b = b;
+	}
+	public double getC() {
+		return c;
+	}
+	public void setC(double c) {
+		this.c = c;
+	}
+	public void girthTrigon() {
+		double d=a+b+c;
+		System.out.println("三角形的周长为："+d);
+		
+	}
+	public void areaTrigon() {
+		double p;
+		double s;
+		p=(a+b+c)/2;
+		s=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+		System.out.println("三角形的面积为："+s);
+	}
+
+
+public static void main(String[] args) {
+//	Trigon a=new Trigon(3, 4, 5);
+//	a.areaTrigon();
+//	a.girthTrigon();
+	Trigon b=new Trigon();
+	b.setA(3);
+	b.setB(4);
+	b.setC(5);
+	b.girthTrigon();
+	b.areaTrigon();
+}
+}

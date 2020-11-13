@@ -1,0 +1,12 @@
+package imooc_4;
+
+public class PersonDome {
+
+	public static void main(String[] args) {
+		Teacher t1 = new Teacher();
+		t1.setName("ÀîÀÚ");
+		t1.setAge(33);
+		System.out.println(t1.getAge() + t1.getName());
+		t1.teach();
+	}
+}

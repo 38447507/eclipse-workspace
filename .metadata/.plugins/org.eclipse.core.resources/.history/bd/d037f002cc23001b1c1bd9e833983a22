@@ -1,0 +1,9 @@
+package yunbanke1;
+
+public class TrifonDome {
+	public static void main(String[] args) {
+		Trigon a=new Trigon();
+		a.areaTrigon(3, 4, 5);
+		a.girthTrigon(7, 8, 9);
+	}
+}

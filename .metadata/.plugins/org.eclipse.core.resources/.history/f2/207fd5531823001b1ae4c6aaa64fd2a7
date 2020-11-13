@@ -1,0 +1,6 @@
+package imooc_2;
+
+public class Zi extends Fu {
+	
+
+}

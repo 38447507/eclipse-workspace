@@ -1,0 +1,8 @@
+package imooc_1;
+
+public class AnimalOperator {
+	public void useAnimal(Cat c) {
+		c.eat();
+	}
+
+}

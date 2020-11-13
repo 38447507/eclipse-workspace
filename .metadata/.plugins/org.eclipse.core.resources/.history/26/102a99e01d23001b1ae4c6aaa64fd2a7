@@ -1,0 +1,17 @@
+ package imooc_3;
+
+public class Dome {
+	
+	public static void main(String[] args) {
+		Teacher t1=new Teacher();
+		t1.setAge(30);
+		t1.setName("ÀîÀÚ");
+		t1.teacher();
+		System.out.println("------------------");
+		
+		Teacher t2=new Teacher("Íõ¶¬Ò»", 33);
+		t2.teacher();
+		
+	}
+
+}
